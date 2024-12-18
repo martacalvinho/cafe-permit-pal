@@ -1,5 +1,6 @@
 import { Permit } from "../types/permits";
 import PermitStatusBadge from "./PermitStatusBadge";
+import DocumentList from "./DocumentList";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalendarIcon, LinkIcon } from "lucide-react";
 
@@ -15,7 +16,7 @@ const PermitCard = ({ permit }: PermitCardProps) => {
         <PermitStatusBadge status={permit.status} />
       </CardHeader>
       <CardContent>
-        <div className="mt-2 space-y-2">
+        <div className="mt-2 space-y-4">
           <p className="text-sm text-gray-600">{permit.description}</p>
           <div className="flex items-center space-x-2 text-sm text-gray-500">
             <CalendarIcon className="h-4 w-4" />
@@ -34,6 +35,9 @@ const PermitCard = ({ permit }: PermitCardProps) => {
             <LinkIcon className="h-4 w-4" />
             <span>Application Link</span>
           </a>
+          <div className="mt-4">
+            <DocumentList documents={permit.requiredDocuments} permitName={permit.name} />
+          </div>
         </div>
       </CardContent>
     </Card>

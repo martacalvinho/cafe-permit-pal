@@ -2,7 +2,7 @@ import { PERMITS } from "../data/permits";
 import PermitCard from "../components/PermitCard";
 import Timeline from "../components/Timeline";
 
-const Index = () => {
+const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="container mx-auto px-4">
@@ -15,7 +15,7 @@ const Index = () => {
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="grid gap-8">
               {PERMITS.map((permit) => (
                 <PermitCard key={permit.id} permit={permit} />
               ))}
@@ -30,4 +30,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Dashboard;
