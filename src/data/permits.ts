@@ -34,6 +34,66 @@ export const PERMITS: Permit[] = [
   },
   {
     id: "2",
+    name: "Food Protection Certificate",
+    issuingAgency: "NYC Department of Health and Mental Hygiene (DOHMH)",
+    description: "Required certification for food service establishment supervisors",
+    applicationUrl: "https://www1.nyc.gov/nycbusiness/description/food-protection-certificate",
+    renewalPeriod: "5 Years",
+    cost: "$115",
+    prerequisites: ["Food Safety Course Completion"],
+    status: "active",
+    expirationDate: "2028-12-31",
+    lastRenewalDate: "2023-12-31",
+    nextRenewalDate: "2028-12-31",
+    requiredDocuments: []
+  },
+  {
+    id: "3",
+    name: "Sales Tax Certificate of Authority",
+    issuingAgency: "NYS Department of Taxation and Finance",
+    description: "Required for collecting sales tax",
+    applicationUrl: "https://www.tax.ny.gov/bus/ads/webdtf17.htm",
+    renewalPeriod: "Permanent",
+    cost: "Free",
+    prerequisites: ["Business Registration"],
+    status: "active",
+    expirationDate: "N/A",
+    lastRenewalDate: "N/A",
+    nextRenewalDate: "N/A",
+    requiredDocuments: []
+  },
+  {
+    id: "4",
+    name: "Business License",
+    issuingAgency: "NYC Department of Consumer Affairs (DCA)",
+    description: "Basic business operation license",
+    applicationUrl: "https://www1.nyc.gov/site/dca/businesses/licenses.page",
+    renewalPeriod: "2 Years",
+    cost: "$150",
+    prerequisites: ["Business Registration", "Tax ID"],
+    status: "active",
+    expirationDate: "2025-12-31",
+    lastRenewalDate: "2023-12-31",
+    nextRenewalDate: "2025-12-31",
+    requiredDocuments: []
+  },
+  {
+    id: "5",
+    name: "Certificate of Occupancy",
+    issuingAgency: "NYC Department of Buildings (DOB)",
+    description: "Certifies building use and occupancy compliance",
+    applicationUrl: "https://www1.nyc.gov/site/buildings/homeowner/certificates-of-occupancy.page",
+    renewalPeriod: "Permanent",
+    cost: "Varies",
+    prerequisites: ["Building Inspection", "Zoning Compliance"],
+    status: "active",
+    expirationDate: "N/A",
+    lastRenewalDate: "N/A",
+    nextRenewalDate: "N/A",
+    requiredDocuments: []
+  },
+  {
+    id: "6",
     name: "Sign Permit",
     issuingAgency: "NYC Department of Buildings (DOB)",
     description: "Required for installing or modifying business signage",
@@ -45,16 +105,10 @@ export const PERMITS: Permit[] = [
     expirationDate: "2024-12-31",
     lastRenewalDate: "2023-12-31",
     nextRenewalDate: "2024-12-31",
-    requiredDocuments: [
-      {
-        id: "doc3",
-        name: "Sign Drawings",
-        status: "missing",
-      }
-    ]
+    requiredDocuments: []
   },
   {
-    id: "3",
+    id: "7",
     name: "Sidewalk Cafe Permit",
     issuingAgency: "NYC Department of Consumer Affairs (DCA)",
     description: "Required for operating an outdoor cafe on city sidewalks",
@@ -69,7 +123,7 @@ export const PERMITS: Permit[] = [
     requiredDocuments: []
   },
   {
-    id: "4",
+    id: "8",
     name: "Music and Entertainment License",
     issuingAgency: "NYC Department of Consumer Affairs (DCA)",
     description: "Required for venues providing music or entertainment",
@@ -84,7 +138,22 @@ export const PERMITS: Permit[] = [
     requiredDocuments: []
   },
   {
-    id: "5",
+    id: "9",
+    name: "Weights and Measures License",
+    issuingAgency: "NYC Department of Consumer Affairs (DCA)",
+    description: "Required for businesses using weighing/measuring devices",
+    applicationUrl: "https://www1.nyc.gov/site/dca/businesses/licenses.page",
+    renewalPeriod: "Annual",
+    cost: "$75",
+    prerequisites: ["Device Inspection", "Business License"],
+    status: "active",
+    expirationDate: "2024-12-31",
+    lastRenewalDate: "2023-12-31",
+    nextRenewalDate: "2024-12-31",
+    requiredDocuments: []
+  },
+  {
+    id: "10",
     name: "Fire Safety Permit",
     issuingAgency: "Fire Department of New York (FDNY)",
     description: "Required for fire safety compliance",

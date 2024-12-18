@@ -1,6 +1,7 @@
 import { PERMITS } from "../data/permits";
 import PermitCard from "../components/PermitCard";
 import Timeline from "../components/Timeline";
+import GuidedSetup from "../components/GuidedSetup";
 
 const Dashboard = () => {
   return (
@@ -15,6 +16,9 @@ const Dashboard = () => {
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2">
+            <div className="mb-8">
+              <GuidedSetup />
+            </div>
             <div className="grid gap-8">
               {PERMITS.map((permit) => (
                 <PermitCard key={permit.id} permit={permit} />
